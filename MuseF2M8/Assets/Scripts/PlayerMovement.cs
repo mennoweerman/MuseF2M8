@@ -20,7 +20,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float jumpHeight; 
 
     //references
-    private CharacterController controller;
+    public CharacterController controller;
 
     private void Start()
     {
@@ -41,8 +41,8 @@ public class PlayerMovement : MonoBehaviour
             velocity.y = -2f;
         }
 
-        float moveZ = Input.GetAxis("Vertical");
-        float moveX = Input.GetAxis("Horizontal");
+        float moveZ = Input.GetAxis("Horizontal"); 
+        float moveX = Input.GetAxis("Vertical");
 
         moveDirection = new Vector3(moveX, 0, moveZ);
 
@@ -94,4 +94,6 @@ public class PlayerMovement : MonoBehaviour
     {
         velocity.y = Mathf.Sqrt(jumpHeight * -2 * gravity);
     }
+    
+    
 }
