@@ -14,7 +14,7 @@ public class KillConditions : MonoBehaviour
         movement = player.GetComponent<PlayerMovement>();
         kill = player.GetComponent<Respawn>();
     }
-    private void OnTriggerEnter(Collider collider)
+    public void Respawn()
     {
         //SceneManager.LoadScene(0);
         movement.controller.enabled = false;

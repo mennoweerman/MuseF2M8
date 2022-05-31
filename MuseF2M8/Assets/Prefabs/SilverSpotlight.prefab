@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3682489900319265486}
   - component: {fileID: 3682489900319265489}
   - component: {fileID: 3682489900319265488}
+  - component: {fileID: 1743433801}
   m_Layer: 0
   m_Name: SilverSpotlight
   m_TagString: Untagged
@@ -28,7 +29,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3682489900319265491}
-  m_LocalRotation: {x: -0.5782703, y: -0, z: -0, w: -0.8158453}
+  m_LocalRotation: {x: -0.57827073, y: 0, z: 0, w: -0.815845}
   m_LocalPosition: {x: 66.37, y: 29.5, z: 13.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -46,20 +47,20 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 10
-  m_Range: 40
-  m_SpotAngle: 24
-  m_InnerSpotAngle: 1
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Intensity: 1
+  m_Range: 10
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 0
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
-    m_Bias: 0.19
-    m_NormalBias: 0.41
-    m_NearPlane: 0.65
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
     m_CullingMatrixOverride:
       e00: 1
       e01: 0
@@ -107,7 +108,7 @@ Camera:
   m_Enabled: 0
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 1, g: 0, b: 0.18923616, a: 1}
+  m_BackGroundColor: {r: 1, g: 0, b: 0.19999981, a: 1}
   m_projectionMatrixMode: 0
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -121,7 +122,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 35
+  far clip plane: 1
   field of view: 60
   orthographic: 0
   orthographic size: 5
@@ -208,10 +209,10 @@ MonoBehaviour:
   spotExponent: 1
   constantAttenuation: 1
   linearAttenuation: 10
-  quadraticAttenuation: 10
+  quadraticAttenuation: 100
   aspect: 1
-  slices: 200
-  colorTint: {r: 0.066037714, g: 0.066037714, b: 0.066037714, a: 1}
+  slices: 30
+  colorTint: {r: 1, g: 1, b: 1, a: 1}
   noiseSpeed: {x: 0, y: 0, z: 0}
   useDithering: 0
   ditherAmount: 0
@@ -224,9 +225,9 @@ MonoBehaviour:
   shadowBlurSize: 0
   renderFullShadows: 0
   _renderShadowMapInUpdate: 0
-  spotRange: 35
+  spotRange: 1
   spotNear: 0.1
-  spotAngle: 20
+  spotAngle: 45
   orthoSize: 0.5
   spotEmission: {fileID: 0}
   spotNoise: {fileID: 0}
@@ -301,3 +302,35 @@ MonoBehaviour:
   orthoMaterial: {fileID: 2100000, guid: 5c70705a1fd5647609ad8326ef5e2024, type: 2}
   renderDepthShader: {fileID: 4800000, guid: 26c171c785261784f8909aae5f3697e4, type: 3}
   meshContainer: {fileID: 0}
+--- !u!114 &1743433801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3682489900319265491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2

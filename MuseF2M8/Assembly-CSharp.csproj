@@ -65,6 +65,7 @@
     <Compile Include="Assets\VLights\Scripts\Util\VLightGeometryUtil.cs" />
     <Compile Include="Assets\Scripts\Respawn.cs" />
     <Compile Include="Assets\VLights\Scripts\Util\GenerateNoiseTexture.cs" />
+    <Compile Include="Assets\Scripts\Kill.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\VLights\Shaders\Light\Legacy\VolumeLightArea.shader" />
